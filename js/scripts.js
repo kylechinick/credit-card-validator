@@ -1,6 +1,6 @@
 console.log('test');
 
-const cardNumberTest = 1234;
+const cardNumberTest = 4102080880435620;
 console.log('cardNumberTest: ', cardNumberTest);
 
 function validate(cardNumber) {
@@ -18,6 +18,11 @@ function validate(cardNumber) {
 
   const digits = cardNumber.toString().split('').map(Number);
   console.log(digits);
+
+  for (let i = digits.length - 1; i >= 0; i -= 1) {
+    // code to run;
+    console.log(digits[i]);
+  }
 }
 
 validate(cardNumberTest);
