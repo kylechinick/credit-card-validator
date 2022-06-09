@@ -21,7 +21,12 @@ function validate(cardNumber) {
 
   for (let i = digits.length - 1; i >= 0; i -= 1) {
     // code to run;
-    console.log(digits[i]);
+    // console.log(digits[i]);
+    if (i % 2 === 0) {
+      console.log('Index ' + i + ' is even and has a value of: ' + digits[i]);
+    } else {
+      console.log('Index ' + i + ' is odd and has a value of: ' + digits[i]);
+    }
   }
 }
 
